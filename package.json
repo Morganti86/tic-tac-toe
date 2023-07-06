@@ -1,5 +1,5 @@
 {
-  "homepage":"https://morganti86.github.io/tic-tac-toe/",
+  "homepage": "https://morganti86.github.io/tic-tac-toe/",
   "name": "tic-tac-toe",
   "private": true,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "canvas-confetti": "1.6.0",
