@@ -1,30 +1,39 @@
 :root {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
+  color: ivory;
   background-color: black;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
   -webkit-text-size-adjust: 100%;
 }
 
+
 body {
+  /* background-color: white; */
   margin: 0;
   display: flex;
   justify-content: center;
-  min-width: 320px;
-  min-height: 100vh;
+  /* min-width: 320px;
+  min-height: 100vh; */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url("/Background.png");
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 h1 {
-  color: rgb(223, 144, 247);
+  /* color: rgb(223, 144, 247); */
+  color: rgb(217, 118, 247);
   font-size: 50px;
 }
 
@@ -36,25 +45,26 @@ h1 {
 
 .board {
   width: fit-content;
-  margin: 40px auto;
+  margin: 5% auto;
   text-align: center;
 }
 
 .board h1 {
-  margin-bottom: 16px;
+  margin: 15% 0 20%;
 }
 
 .board button {
   padding: 8px 12px;
-  margin: 25px;
+  margin-bottom: 15%;
   background: transparent;
   border: 2px solid #eee;
   color: #eee;
-  width: 100px;
+  width: 200px;
   border-radius: 5px;
   transition: 0.2s;
   font-weight: bold;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .board button:hover {
@@ -71,7 +81,7 @@ h1 {
 .turn {
   display: flex;
   justify-content: center;
-  margin: 15px auto;
+  margin: 10% auto;
   width: fit-content;
   position: relative;
   border-radius: 10px;
@@ -114,14 +124,14 @@ h1 {
   gap: 20px;
 }
 
-.winner .win {
+/* .winner .win {
   margin: 0 auto;
   width: fit-content;
   border: 2px solid #eee;
   border-radius: 10px;
   display: flex;
   gap: 15px;
-}
+} */
 
 .square {
   width: 100px;

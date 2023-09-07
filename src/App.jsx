@@ -12,6 +12,8 @@ import { checkEndGame } from "./components/Logic/Checkers";
 import confetti from "canvas-confetti";
 import "./App.css";
 import { Board } from "./components/UI/Board";
+import { Header } from "./components/Header";
+import { Footer } from "./components/Footer";
 
 function App() {
   // const [board, setBoard] = useState(Array(9).fill(null));
@@ -25,9 +27,7 @@ function App() {
   // const [turn, setTurn] = useState(TURNS.X);
   const [turn, setTurn] = useState(() => {
     const turnFromStorage = window.localStorage.getItem("turn");
-    return turnFromStorage
-    ? JSON.parse(turnFromStorage)
-    : TURNS.X
+    return turnFromStorage ? JSON.parse(turnFromStorage) : TURNS.X;
   });
 
   const [winner, setWinner] = useState(null);
@@ -63,18 +63,20 @@ function App() {
     setTurn(TURNS.X);
     setWinner(null);
 
-    window.localStorage.removeItem('board');
-    window.localStorage.removeItem('turn');
-
+    window.localStorage.removeItem("board");
+    window.localStorage.removeItem("turn");
   };
 
   return (
     <main className="board">
-      <h1>TIC TAC TOE</h1>
-      <Button resetGame={resetGame} />
+      <Header />
+      {/* <h1>TIC TAC TOE</h1> */}
       <Board board={board} updateBoard={updateBoard} />
       <Turn turn={turn} />
+      <Button resetGame={resetGame} />
+
       <WinnerModal resetGame={resetGame} winner={winner} />
+      <Footer />
     </main>
   );
 }
