@@ -96,8 +96,8 @@ h1 {
 }
 
 .square.is-selected {
-  color: #fff;
-  background: rgb(200, 41, 248);
+  color: ivory;
+  background: rgb(176, 60, 212);
 }
 
 .winner {
