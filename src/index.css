@@ -96,7 +96,6 @@ h1 {
 }
 
 .square.is-selected {
-  color: ivory;
   background: rgb(176, 60, 212);
 }
 
@@ -142,4 +141,6 @@ h1 {
   place-items: center;
   cursor: pointer;
   font-size: 48px;
+  color: transparent;  
+  text-shadow: 0 0 0 ivory;
 }
