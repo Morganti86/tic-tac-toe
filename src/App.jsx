@@ -74,7 +74,6 @@ function App() {
       <Board board={board} updateBoard={updateBoard} />
       <Turn turn={turn} />
       <Button resetGame={resetGame} />
-
       <WinnerModal resetGame={resetGame} winner={winner} />
       <Footer />
     </main>
